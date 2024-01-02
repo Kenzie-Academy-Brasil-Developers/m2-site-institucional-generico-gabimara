@@ -4,7 +4,6 @@
 header {
     font-family: var(--font-primary);
     width: 100%;
-    border: 3px solid red;
     border-bottom: 2px solid var(--brand-1, #4C6EF5);
     background: var(--gray-1, #191C1F);
     justify-content: space-between;
@@ -18,4 +17,36 @@ header {
     height: 60px;
     padding: 20px 32px;
     gap: 10px;
+}
+
+.banner {
+    font-family: var(--font-primary);
+    background: var(--gray-2);
+    color: var(--gray-6);
+    font-size: var(--font-size-title1);
+    display: flex;
+    width: 100%;
+    padding: 250px 236px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+span {
+    color: var(--brand-1);
+}
+
+.texto_banner{
+    color: var(--gray-4);
+    text-align: center;
+    font-size: var(--font-size-text1);
+}
+
+.button_aboutUs{
+    border: 1px solid var(--brand-1);
+    background: var(--brand-1);
+    color: var(--gray-7);
+    padding: 20px 32px;
+    align-items: center;
+    font-size: var(--font-size-text3);
 }
