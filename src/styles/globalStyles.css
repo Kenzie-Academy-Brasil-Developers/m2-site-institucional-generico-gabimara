@@ -11,7 +11,7 @@
     --gray-6: #EDF2FF;
     --gray-7: #F8F9FA;
 
-    --fonte-primary: 'Inter', sans-serif;
+    --fonte-primary: "Inter", sans-serif;
 
     --fonte-size-title1: 52px;
     --fonte-size-title2: 40px;
@@ -21,7 +21,5 @@
     --fonte-size-text3: 16px;
     
     --fonte-line-heigth-text4: 24px;
-
-    
-
 }
+

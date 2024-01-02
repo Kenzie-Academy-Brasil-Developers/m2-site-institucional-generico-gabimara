@@ -1,2 +1,21 @@
 @import url('./reset.css');
 @import url('./globalStyles.css');
+
+header {
+    font-family: var(--font-primary);
+    width: 100%;
+    border: 3px solid red;
+    border-bottom: 2px solid var(--brand-1, #4C6EF5);
+    background: var(--gray-1, #191C1F);
+    justify-content: space-between;
+    padding: 20px 236px;
+}
+
+.button_enter {
+    color: var(--gray-7);
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-7, #F8F9FA);
+    height: 60px;
+    padding: 20px 32px;
+    gap: 10px;
+}
