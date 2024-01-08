@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/index.js" defer></script>
     <title>Página Institucional Genérica</title>
   </head>
   <body>
     <!-- ====== Header ====== -->
     <header>
         <img src="./src/assets/logo.svg" alt="Logo Generic Course" />
-        <button class="button_enter">Entrar para próxima turma</button>
+        <button id="register_modal" class="button_enter">Entrar para próxima turma</button>
     </header>
     <main>
       <!-- ====== Section Banner ====== -->
@@ -41,9 +42,7 @@
 
       <!-- ====== Section FAQ ====== -->
       <section class="faq_section">
-        <!-- <div class="questions_faq"> -->
           <!-- LEFT SIDE -->
-          <div>
             <div class="div_faq">
               <h2 class="faq_title">Dúvidas frequentes</h2>
               <p class="faq_text">
@@ -53,7 +52,6 @@
               </p>
               <button class="button_nextClass">Entrar para próxima turma</button>
             </div>
-          </div>
           <!-- RIGHT SIDE -->
           <ul class="faq_ul">
             <!-- Question 1 -->
@@ -192,6 +190,18 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog></dialog>
+    <dialog id="modalController">
+      <form>
+      <div class="modalContainer">
+        <h1 class="h1_register">Cadastro</h1>
+        <p class="p_modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus laudantium officiis eaque ex doloribus, nostrum repudiandae nulla, et, expedita ea numquam porro culpa nemo.</p>
+      
+        <input class="input_style" type="email" name="e-mail" placeholder="Digitar email">
+      <button class="button_modal">Entrar na lista para próxima turma
+      </button>
+      <button id="close_modal" class="close_modal">x</button>
+    </div>
+    </form>
+    </dialog>
   </body>
 </html>
