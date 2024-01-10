@@ -1,18 +1,29 @@
 @import url('./reset.css');
 @import url('./globalStyles.css');
 
-header {
+.header {
+    max-width: 1256px;
     font-family: var(--font-primary);
-    width: 100%;
-    border-bottom: 2px solid var(--brand-1, #4C6EF5);
-    background: var(--gray-1, #191C1F);
     justify-content: space-between;
-    padding: 20px 236px;
+    padding: 20px;
     display: flex;
+    margin: 0 auto;
+}
+header{
+    border-bottom: 2px solid var(--brand-1, #4C6EF5);
     position: fixed;
     z-index: 1;
+    top: 0;
+    width: 100%; 
+    background: var(--gray-1, #191C1F);
 }
-
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-2);
+}
 .button_enter {
     color: var(--gray-7);
     background-color: var(--gray-1);
@@ -29,11 +40,18 @@ header {
     font-size: var(--font-size-title1);
     display: flex;
     width: 100%;
-    padding: 250px 236px;
     flex-direction: column;
     align-items: center;
     gap: 44px;
     font-weight: 600;
+    margin-top: 100px;
+    height: 600px;
+    justify-content: center;
+    max-width: 1256px;
+}
+.banner__titulo{
+    width:80%;
+    text-align: center;
 }
 
 span {
@@ -46,6 +64,10 @@ span {
     font-size: var(--font-size-text1);
     width: 770px;
 }
+.aboutUs__section{
+    width: 100%;
+    background-color: var(--gray-1);
+}
 
 .button_aboutUs{
     border: 1px solid var(--brand-1);
@@ -57,21 +79,21 @@ span {
 }
 
 .div_aboutUs{
-    background-color: var(--gray-1);
     color: var(--gray-6);
     font-family: var(--font-primary);
     font-size: var(--font-size-title2);
     display: flex;
-    padding: 82px 236px;
+    padding: 80px 20px;
     align-items: center;
-    gap: 56px;
     justify-content: space-between;
     font-weight: 600;
+    max-width: 1256px;
+    margin: 0 auto;
 }
 
 .title_aboutUs{
     display: flex;
-    width: 620px;
+    width: 45%;
 }
 
 .aboutUs_text{
@@ -80,18 +102,20 @@ span {
     color: var(--gray-5);
     line-height: 150%;
     font-weight: 400;
-    width: 580px;
     text-align: justify;
+    width: 45%;
 }
 
 .faq_section{
     background-color: var(--gray-2);
     color: var(--gray-6);
     display: flex;
-    padding: 82px 236px;
+    padding: 80px 20px;
     align-items: flex-start;
     gap: 56px;
     justify-content: space-between;
+    max-width: 1256px;
+    width: 100%;
 }
 
 .div_faq{
@@ -162,17 +186,21 @@ span {
 
 .section_coments{
     display: flex;
-    padding: 82px 236px;
     align-items: flex-start;
     width: 100%;
     background-color: var(--gray-2);    
     flex-direction: row-reverse;
-    gap: 56px;
+    justify-content: space-between;
+    padding-block: 40px;
+    max-width: 1256px;
+    padding: 80px 20px;
 }
 .coment_student1{
     display: flex;
     position: sticky;
-    top: 10rem;   
+    top: 10rem; 
+    width: 45%; 
+    max-width: 500px; 
 }
 
 .coment_student{
@@ -181,8 +209,13 @@ span {
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    background-color: var(--brand-1);
-    width: 500px;
+    background-color: var(--brand-1);  
+}
+.section__coments{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .coment_title{
@@ -208,7 +241,8 @@ span {
     align-items: flex-start;
     gap: 56px;
     flex-direction: column;
-    width: 100%;
+    width: 45%;
+    max-width: 500px;
 }
 
 .student_class{
@@ -218,7 +252,7 @@ span {
     align-items: flex-start;
     gap: 16px;
     flex-direction: column;
-    width: 176px;
+    width: 200px;
     height: 27px;
 }
 
@@ -226,6 +260,8 @@ span {
     font-size: var(--font-size-title3);
     font-weight: 600;
     line-height: 160%;
+    min-width: 100px;
+    width: 30%;
 }
 
 .student_year{
@@ -241,8 +277,6 @@ span {
     font-size: var(--font-size-text2);
     font-weight: 400;
     line-height: 150%;
-    width: 412px;
-    height: 179px;
     text-align: justify;
 }
 
@@ -250,12 +284,12 @@ span {
     display:flex;
     align-items: flex-start;
     gap:16px;
+    width: 100%;
 }
 
 footer{
     display: flex;
     width: 100%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -318,13 +352,35 @@ dialog{
     font-size: var(--font-size-text3);
     font-weight: 600;
     text-align: center;
+    padding-top: 15px;
 }
 
 .close_modal{
     display: flex;
-    padding: 0px 12px;
-    border-radius: 4px;
+    padding: 9px 11px;
+    border-radius: 3px;
     background-color: var(--gray-3);
     justify-content: center;
+    color: var(--gray-4);
+    text-align: center;
+    font-size: var(--font-size-text1);
+    font-family: var(--font-primary);
+    position: absolute; 
+    top: 3rem;
+    right: 3rem;
+}
 
+@media (max-width: 768px) {  
+ .section_coments{
+    flex-direction: column; 
+ }
+}
+
+@media (max-width: 425px) {  
+    .section_coments{
+       flex-direction: column;
+ }
+ header{
+    display: none;
+ }
 }

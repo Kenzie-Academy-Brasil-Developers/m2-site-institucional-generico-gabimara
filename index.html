@@ -10,14 +10,16 @@
   <body>
     <!-- ====== Header ====== -->
     <header>
+      <div class="header">
         <img src="./src/assets/logo.svg" alt="Logo Generic Course" />
         <button id="register_modal" class="button_enter">Entrar para próxima turma</button>
+      </div>
     </header>
     <main>
       <!-- ====== Section Banner ====== -->
       <section>
         <div class="banner">
-          <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
+          <h1 class="banner__titulo">Desenvolvendo <span>suas</span> próximas habilidades</h1>
           <p class="texto_banner">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -28,7 +30,7 @@
       </section>
 
       <!-- ====== Section About ====== -->
-      <section>
+      <section class="aboutUs__section">
         <div class="div_aboutUs">
           <h2 class="title_aboutUs">Quem somos nós?</h2>
           <p class="aboutUs_text">
@@ -99,7 +101,7 @@
       </section>
 
       <!-- ====== Section Comments ====== -->
-      <section>
+      <section class="section__coments">
         <div class="section_coments">
           <!-- RIGHT SIDE -->
           <div class="coment_student1">
@@ -194,12 +196,12 @@
       <form>
       <div class="modalContainer">
         <h1 class="h1_register">Cadastro</h1>
+        <button id="close_modal" class="close_modal">X</button>
         <p class="p_modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus laudantium officiis eaque ex doloribus, nostrum repudiandae nulla, et, expedita ea numquam porro culpa nemo.</p>
-      
+     
         <input class="input_style" type="email" name="e-mail" placeholder="Digitar email">
       <button class="button_modal">Entrar na lista para próxima turma
-      </button>
-      <button id="close_modal" class="close_modal">x</button>
+      </button> 
     </div>
     </form>
     </dialog>
