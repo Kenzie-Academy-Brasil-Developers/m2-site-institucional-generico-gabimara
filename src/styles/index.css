@@ -5,7 +5,7 @@
     max-width: 1256px;
     font-family: var(--font-primary);
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px clamp(0.5rem, 0.039rem + 2.456vw, 2.25rem);
     display: flex;
     margin: 0 auto;
 }
@@ -83,7 +83,7 @@ span {
     font-family: var(--font-primary);
     font-size: var(--font-size-title2);
     display: flex;
-    padding: 80px 20px;
+    padding: 80px clamp(0.5rem, 0.039rem + 2.456vw, 2.25rem);
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
@@ -110,7 +110,7 @@ span {
     background-color: var(--gray-2);
     color: var(--gray-6);
     display: flex;
-    padding: 80px 20px;
+    padding: 80px clamp(0.5rem, 0.303rem + 1.053vw, 1.25rem);
     align-items: flex-start;
     gap: 56px;
     justify-content: space-between;
@@ -191,9 +191,8 @@ span {
     background-color: var(--gray-2);    
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-block: 40px;
     max-width: 1256px;
-    padding: 80px 20px;
+    padding: 80px clamp(0.5rem, 0.039rem + 2.456vw, 2.25rem);
 }
 .coment_student1{
     display: flex;
@@ -374,13 +373,32 @@ dialog{
  .section_coments{
     flex-direction: column; 
  }
+ .coment_student1{
+    position: static;
+    width: 100vw;
+ }
+ .coment_student{
+    width: 100%;
+ }
+ .defined_student{
+    flex-direction: column;
+    gap:5rem;
+    width: 100%;
+ }
+ .student_class{
+    flex-direction: row;
+    width: 100%;
+ }
+ .student_brief{
+    width: 100%;
+ }
 }
 
 @media (max-width: 425px) {  
     .section_coments{
        flex-direction: column;
  }
- header{
-    display: none;
+    .button_enter{
+        display: none;
+    }
  }
-}
